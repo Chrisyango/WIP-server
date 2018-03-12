@@ -21,7 +21,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "cross-env NODE_ENV=test nyc mocha --exit",
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "author": "Chris Yang",
   "license": "ISC"

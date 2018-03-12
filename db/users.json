@@ -1,11 +1,11 @@
 [
   {
-    "name": "Chris Yang",
+    "fullname": "Chris Yang",
     "username": "cyang",
     "password": "password123"
   },
   {
-    "name": "Billy Bob",
+    "fullname": "Billy Bob",
     "username": "bbob",
     "password": "password123"
   }

@@ -5,6 +5,16 @@ const router = express.Router();
 
 const User = require('../models/user');
 
+router.get('/users', (req, res, next) => {
+  User.find()
+    .then(results => {
+      res.json(results);
+    })
+    .catch(err => {
+      next(err);
+    });
+});
+
 /* ========== POST/CREATE AN ITEM ========== */
 router.post('/users', (req, res, next) => {
   const {fullname, username, password} = req.body;
