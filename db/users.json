@@ -2,11 +2,13 @@
   {
     "fullname": "Chris Yang",
     "username": "cyang",
-    "password": "password123"
+    "password": "password123",
+    "email": "test@test.com"
   },
   {
     "fullname": "Billy Bob",
     "username": "bbob",
-    "password": "password123"
+    "password": "password123",
+    "email": "tester@test.com"
   }
 ]

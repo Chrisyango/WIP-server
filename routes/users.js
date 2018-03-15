@@ -17,7 +17,7 @@ router.get('/users', (req, res, next) => {
 
 /* ========== POST/CREATE AN ITEM ========== */
 router.post('/users', (req, res, next) => {
-  const {fullname, username, password} = req.body;
+  const {fullname, username, password, email} = req.body;
 
   const requiredFields = ['username', 'password'];
   const missingField = requiredFields.find(field => {
@@ -103,7 +103,8 @@ router.post('/users', (req, res, next) => {
       const newUser = {
         username,
         password: digest,
-        fullname
+        fullname,
+        email
       };
       return User.create(newUser);
     })
