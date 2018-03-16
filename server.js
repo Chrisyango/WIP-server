@@ -7,6 +7,8 @@ const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
 const passport = require('passport');
+const multer = require('multer');
+const axios = require('axios');
 
 const {PORT, CLIENT_ORIGIN} = require('./config');
 const {dbConnect} = require('./db-mongoose');
@@ -17,7 +19,20 @@ const usersRouter = require('./routes/users');
 const authRouter = require('./routes/auth');
 const picRouter = require('./routes/pics');
 
+// Init app
 const app = express();
+
+const storage = multer.diskStorage({
+  destination: './public/uploads',
+  filename(req, file, cb) {
+    cb(null, `${new Date()}-${file.originalname}`);
+  },
+});
+
+const upload = multer({ storage });
+
+// Public Folder
+app.use(express.static('./public'));
 
 app.use(
   morgan(process.env.NODE_ENV === 'production' ? 'common' : 'dev', {
@@ -32,6 +47,23 @@ app.use(
     origin: CLIENT_ORIGIN
   })
 );
+
+app.post('/api/uploads', upload.single('file'), (req, res) => {
+  const file = req.file; // file passed from client
+  const meta = req.body; // all other values passed from the client, like name, etc..
+  console.log(file);
+  // send the data to our REST API
+  // axios({
+  //   url: '',
+  //   method: 'post',
+  //   data: {
+  //     file,
+  //     name: meta.name,      
+  //   },
+  // })
+  //   .then(response => res.status(200).json(response.data.data))
+  //   .catch((error) => res.status(500).json(error.response.data));
+});
 
 app.use('/api', usersRouter);
 app.use('/api', authRouter);

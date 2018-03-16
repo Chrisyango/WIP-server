@@ -3,10 +3,8 @@
 const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
-const fs = require('fs');
 
 const Pic = require('../models/pic');
-const Image = require('../models/image');
 
 /* ========== GET/READ ALL ITEM ========== */
 router.get('/pic', (req, res, next) => {
