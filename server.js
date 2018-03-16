@@ -15,6 +15,7 @@ const localStrategy = require('./passport/local');
 
 const usersRouter = require('./routes/users');
 const authRouter = require('./routes/auth');
+const picRouter = require('./routes/pics');
 
 const app = express();
 
@@ -40,6 +41,8 @@ passport.use(jwtStrategy);
 app.use(passport.authenticate('jwt',
   {session: false, failWithError: true})
 );
+
+app.use('/api', picRouter);
 
 function runServer(port = PORT) {
   const server = app

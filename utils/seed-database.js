@@ -4,8 +4,10 @@ const mongoose = require('mongoose');
 
 const { DATABASE_URL } = require('../config');
 const User = require('../models/user');
+const Pic = require('../models/pic');
 
 const seedUsers = require('../db/users');
+const seedPics = require('../db/pics');
 
 mongoose.connect(DATABASE_URL)
   .then(() => {
@@ -18,6 +20,12 @@ mongoose.connect(DATABASE_URL)
     return User.insertMany(seedUsers)
       .then(results => {
         console.info(`Inserted ${results.length} Users`);
+      });
+  })
+  .then(() => {
+    return Pic.insertMany(seedPics)
+      .then(results => {
+        console.info(`Inserted ${results.length} Pics`);
       });
   })
   .then(() => {
