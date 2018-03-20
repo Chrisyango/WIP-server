@@ -28,7 +28,6 @@ router.get('/pic/:id', (req, res, next) => {
   }
 
   Pic.findOne({_id: id})
-    .select('id title src alt likes')
     .then(result => {
       if (result) {
         res.json(result);
@@ -55,6 +54,36 @@ router.post('/pic', (req, res, next) => {
   Pic.create(newItem)
     .then(result => {
       res.location(`${req.originalUrl}/${result.id}`).status(201).json(result);
+    })
+    .catch(err => {
+      next(err);
+    });
+});
+
+/* ========== UPDATE AN ITEM ========== */
+router.put('/pic/:id', (req, res, next) => {
+  const { id } = req.params;
+  const { likes, comments } = req.body;
+
+  if (!mongoose.Types.ObjectId.isValid(id)) {
+    const err = new Error('The `id` is not valid');
+    err.status = 400;
+    return next(err);
+  }
+
+  console.log(req.body.likes);
+
+  const updateItem = { likes, comments };
+
+  const options = { new: true };
+
+  Pic.findByIdAndUpdate(id, updateItem, options)
+    .then(result => {
+      if (result) {
+        res.json(result);
+      } else {
+        next();
+      }
     })
     .catch(err => {
       next(err);

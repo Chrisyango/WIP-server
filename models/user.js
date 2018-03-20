@@ -32,14 +32,6 @@ UserSchema.set('toObject', {
   } 
 });
 
-// UserSchema.methods.serialize = function() {
-//   return {
-//     id: this._id,
-//     name: this.name,
-//     username: this.username
-//   };
-// };
-
 UserSchema.methods.validatePassword = function(password) {
   return bcrypt.compare(password, this.password);
 };

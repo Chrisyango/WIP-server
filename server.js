@@ -8,7 +8,6 @@ const cors = require('cors');
 const morgan = require('morgan');
 const passport = require('passport');
 const multer = require('multer');
-const axios = require('axios');
 
 const {PORT, CLIENT_ORIGIN} = require('./config');
 const {dbConnect} = require('./db-mongoose');
@@ -22,10 +21,17 @@ const picRouter = require('./routes/pics');
 // Init app
 const app = express();
 
+const d = new Date();
+const curr_date = d.getDate();
+const curr_month = d.getMonth();
+const curr_year = d.getFullYear();
+const curr_hour = d.getHours();
+const curr_min = d.getMinutes();
+const curr_sec = d.getSeconds();
 const storage = multer.diskStorage({
   destination: './public/uploads',
   filename(req, file, cb) {
-    cb(null, `${new Date()}-${file.originalname}`);
+    cb(null, `${curr_month}${curr_date}${curr_year}${curr_hour}${curr_min}${curr_sec}-${file.originalname}`);
   },
 });
 
@@ -51,18 +57,8 @@ app.use(
 app.post('/api/uploads', upload.single('file'), (req, res) => {
   const file = req.file; // file passed from client
   const meta = req.body; // all other values passed from the client, like name, etc..
-  console.log(file);
-  // send the data to our REST API
-  // axios({
-  //   url: '',
-  //   method: 'post',
-  //   data: {
-  //     file,
-  //     name: meta.name,      
-  //   },
-  // })
-  //   .then(response => res.status(200).json(response.data.data))
-  //   .catch((error) => res.status(500).json(error.response.data));
+
+  res.json(file);
 });
 
 app.use('/api', usersRouter);

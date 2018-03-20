@@ -1,37 +1,172 @@
 [
   {
     "title": "Wall-E",
-    "src": "../images/wall-e.jpeg",
+    "src": "http://localhost:8080/uploads/wall-e.jpeg",
     "alt": "Picture of Wall-E",
     "likes": 0,
-    "username": "cyango"
+    "username": "cyango",
+    "comments": [ 
+      {
+        "comment": "Hello",
+        "username": "cyango"
+      }, 
+      {
+        "comment": "Goodbye",
+        "username": "cyango"
+      }
+    ]
   },
   {
     "title": "Airplane",
-    "src": "../images/aircraft.jpg",
+    "src": "http://localhost:8080/uploads/aircraft.jpg",
     "alt": "Picture of an Airplane",
     "likes": 0,
-    "username": "cyango"
+    "username": "cyango",
+    "comments": [ 
+      {
+        "comment": "Hello",
+        "username": "cyango"
+      }, 
+      {
+        "comment": "Goodbye",
+        "username": "cyango"
+      }
+    ]
   },
   {
     "title": "Milk",
-    "src": "../images/milk.jpg",
+    "src": "http://localhost:8080/uploads/milk.jpg",
     "alt": "Picture of Milk",
     "likes": 0,
-    "username": "cyango"
+    "username": "cyango",
+    "comments": [ 
+      {
+        "comment": "Hello",
+        "username": "cyango"
+      }, 
+      {
+        "comment": "Goodbye",
+        "username": "cyango"
+      }
+    ]
   },
   {
     "title": "Locket",
-    "src": "../images/locket.jpg",
+    "src": "http://localhost:8080/uploads/locket.jpg",
     "alt": "Picture of a Locket",
     "likes": 0,
-    "username": "cyango"
+    "username": "cyango",
+    "comments": [ 
+      {
+        "comment": "Hello",
+        "username": "cyango"
+      }, 
+      {
+        "comment": "Goodbye",
+        "username": "cyango"
+      }
+    ]
   },
   {
     "title": "Magnifying Glass",
-    "src": "../images/magnifying-glass.jpg",
+    "src": "http://localhost:8080/uploads/magnifying-glass.jpg",
     "alt": "Picture of a Magnifying Glass",
     "likes": 0,
-    "username": "cyango"
+    "username": "cyango",
+    "comments": [ 
+      {
+        "comment": "Hello",
+        "username": "cyango"
+      }, 
+      {
+        "comment": "Goodbye",
+        "username": "cyango"
+      }
+    ]
+  },
+  {
+    "title": "Wall-E",
+    "src": "http://localhost:8080/uploads/wall-e.jpeg",
+    "alt": "Picture of Wall-E",
+    "likes": 0,
+    "username": "cyango",
+    "comments": [ 
+      {
+        "comment": "Hello",
+        "username": "cyango"
+      }, 
+      {
+        "comment": "Goodbye",
+        "username": "cyango"
+      }
+    ]
+  },
+  {
+    "title": "Airplane",
+    "src": "http://localhost:8080/uploads/aircraft.jpg",
+    "alt": "Picture of an Airplane",
+    "likes": 0,
+    "username": "cyango",
+    "comments": [ 
+      {
+        "comment": "Hello",
+        "username": "cyango"
+      }, 
+      {
+        "comment": "Goodbye",
+        "username": "cyango"
+      }
+    ]
+  },
+  {
+    "title": "Milk",
+    "src": "http://localhost:8080/uploads/milk.jpg",
+    "alt": "Picture of Milk",
+    "likes": 0,
+    "username": "cyango",
+    "comments": [ 
+      {
+        "comment": "Hello",
+        "username": "cyango"
+      }, 
+      {
+        "comment": "Goodbye",
+        "username": "cyango"
+      }
+    ]
+  },
+  {
+    "title": "Locket",
+    "src": "http://localhost:8080/uploads/locket.jpg",
+    "alt": "Picture of a Locket",
+    "likes": 0,
+    "username": "cyango",
+    "comments": [ 
+      {
+        "comment": "Hello",
+        "username": "cyango"
+      }, 
+      {
+        "comment": "Goodbye",
+        "username": "cyango"
+      }
+    ]
+  },
+  {
+    "title": "Magnifying Glass",
+    "src": "http://localhost:8080/uploads/magnifying-glass.jpg",
+    "alt": "Picture of a Magnifying Glass",
+    "likes": 0,
+    "username": "cyango",
+    "comments": [ 
+      {
+        "comment": "Hello",
+        "username": "cyango"
+      }, 
+      {
+        "comment": "Goodbye",
+        "username": "cyango"
+      }
+    ]
   }
 ]

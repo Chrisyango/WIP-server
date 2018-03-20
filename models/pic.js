@@ -23,6 +23,9 @@ const PicSchema = new mongoose.Schema({
   username: {
     type: String,
     required: true
+  },
+  comments: {
+    type: Array
   }
 });
 
