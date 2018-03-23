@@ -90,4 +90,19 @@ router.put('/pic/:id', (req, res, next) => {
     });
 });
 
+/* ========== DELETE/REMOVE A SINGLE ITEM ========== */
+router.delete('/pic/:id', (req, res, next) => {
+  const {id} = req.params;
+
+  Pic.findOneAndRemove({_id: id})
+    .then(count => {
+      if (count) {
+        res.status(204).end();
+      } else {
+        next();
+      }
+    })
+    .catch(next);
+});
+
 module.exports = router;
