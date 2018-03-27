@@ -29,7 +29,7 @@ const curr_hour = d.getHours();
 const curr_min = d.getMinutes();
 const curr_sec = d.getSeconds();
 const storage = multer.diskStorage({
-  destination: './public/uploads',
+  destination: './public/api/uploads',
   filename(req, file, cb) {
     cb(null, `${curr_month}${curr_date}${curr_year}${curr_hour}${curr_min}${curr_sec}-${file.originalname}`);
   },
@@ -58,6 +58,9 @@ app.post('/api/uploads', upload.single('file'), (req, res) => {
   const file = req.file; // file passed from client
   const meta = req.body; // all other values passed from the client, like name, etc..
 
+  console.log(file);
+  // console.log(req);
+  // console.log(res);
   res.json(file);
 });
 

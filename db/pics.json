@@ -1,7 +1,7 @@
 [
   {
     "title": "Wall-E",
-    "src": "http://localhost:8080/uploads/wall-e.jpeg",
+    "src": "http://localhost:8080/api/uploads/wall-e.jpeg",
     "alt": "Picture of Wall-E",
     "likes": 0,
     "username": "cyango",
@@ -18,7 +18,7 @@
   },
   {
     "title": "Airplane",
-    "src": "http://localhost:8080/uploads/aircraft.jpg",
+    "src": "http://localhost:8080/api/uploads/aircraft.jpg",
     "alt": "Picture of an Airplane",
     "likes": 0,
     "username": "cyango",
@@ -35,7 +35,7 @@
   },
   {
     "title": "Milk",
-    "src": "http://localhost:8080/uploads/milk.jpg",
+    "src": "http://localhost:8080/api/uploads/milk.jpg",
     "alt": "Picture of Milk",
     "likes": 0,
     "username": "cyango",
@@ -52,7 +52,7 @@
   },
   {
     "title": "Locket",
-    "src": "http://localhost:8080/uploads/locket.jpg",
+    "src": "http://localhost:8080/api/uploads/locket.jpg",
     "alt": "Picture of a Locket",
     "likes": 0,
     "username": "cyango",
@@ -69,7 +69,7 @@
   },
   {
     "title": "Magnifying Glass",
-    "src": "http://localhost:8080/uploads/magnifying-glass.jpg",
+    "src": "http://localhost:8080/api/uploads/magnifying-glass.jpg",
     "alt": "Picture of a Magnifying Glass",
     "likes": 0,
     "username": "cyango",
@@ -86,7 +86,7 @@
   },
   {
     "title": "Wall-E",
-    "src": "http://localhost:8080/uploads/wall-e.jpeg",
+    "src": "http://localhost:8080/api/uploads/wall-e.jpeg",
     "alt": "Picture of Wall-E",
     "likes": 0,
     "username": "cyango",
@@ -103,7 +103,7 @@
   },
   {
     "title": "Airplane",
-    "src": "http://localhost:8080/uploads/aircraft.jpg",
+    "src": "http://localhost:8080/api/uploads/aircraft.jpg",
     "alt": "Picture of an Airplane",
     "likes": 0,
     "username": "cyango",
@@ -120,7 +120,7 @@
   },
   {
     "title": "Milk",
-    "src": "http://localhost:8080/uploads/milk.jpg",
+    "src": "http://localhost:8080/api/uploads/milk.jpg",
     "alt": "Picture of Milk",
     "likes": 0,
     "username": "cyango",
@@ -137,7 +137,7 @@
   },
   {
     "title": "Locket",
-    "src": "http://localhost:8080/uploads/locket.jpg",
+    "src": "http://localhost:8080/api/uploads/locket.jpg",
     "alt": "Picture of a Locket",
     "likes": 0,
     "username": "cyango",
@@ -154,7 +154,7 @@
   },
   {
     "title": "Magnifying Glass",
-    "src": "http://localhost:8080/uploads/magnifying-glass.jpg",
+    "src": "http://localhost:8080/api/uploads/magnifying-glass.jpg",
     "alt": "Picture of a Magnifying Glass",
     "likes": 0,
     "username": "cyango",
