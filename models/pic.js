@@ -25,7 +25,12 @@ const PicSchema = new mongoose.Schema({
     required: true
   },
   comments: {
-    type: Array
+    type: Array,
+    required: true
+  },
+  created: {
+    type: Number,
+    required: true
   }
 });
 

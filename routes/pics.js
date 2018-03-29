@@ -41,6 +41,7 @@ router.get('/pic/:id', (req, res, next) => {
 /* ========== POST/CREATE AN ITEM ========== */
 router.post('/pic', (req, res, next) => {
   const { title, alt, src, likes, username } = req.body;
+  const created = Date.now();
 
   /***** Never trust users - validate input *****/
   if (!title) {
@@ -49,7 +50,7 @@ router.post('/pic', (req, res, next) => {
     return next(err);
   }
 
-  const newItem = { title, alt, src, likes, username };
+  const newItem = { title, alt, src, likes, username, created };
 
   Pic.create(newItem)
     .then(result => {

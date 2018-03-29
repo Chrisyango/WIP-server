@@ -1,7 +1,7 @@
 [
   {
     "title": "Wall-E",
-    "src": "http://localhost:8080/api/uploads/wall-e.jpeg",
+    "src": "https://workinprogress-cyang.herokuapp.com/api/uploads/wall-e.jpeg",
     "alt": "Picture of Wall-E",
     "likes": 0,
     "username": "cyango",
@@ -14,11 +14,12 @@
         "comment": "Goodbye",
         "username": "cyango"
       }
-    ]
+    ],
+    "created": 1522201646827
   },
   {
     "title": "Airplane",
-    "src": "http://localhost:8080/api/uploads/aircraft.jpg",
+    "src": "https://workinprogress-cyang.herokuapp.com/api/uploads/aircraft.jpg",
     "alt": "Picture of an Airplane",
     "likes": 0,
     "username": "cyango",
@@ -31,11 +32,12 @@
         "comment": "Goodbye",
         "username": "cyango"
       }
-    ]
+    ],
+    "created": 1522201646827
   },
   {
     "title": "Milk",
-    "src": "http://localhost:8080/api/uploads/milk.jpg",
+    "src": "https://workinprogress-cyang.herokuapp.com/api/uploads/milk.jpg",
     "alt": "Picture of Milk",
     "likes": 0,
     "username": "cyango",
@@ -48,11 +50,12 @@
         "comment": "Goodbye",
         "username": "cyango"
       }
-    ]
+    ],
+    "created": 1522201646827
   },
   {
     "title": "Locket",
-    "src": "http://localhost:8080/api/uploads/locket.jpg",
+    "src": "https://workinprogress-cyang.herokuapp.com/api/uploads/locket.jpg",
     "alt": "Picture of a Locket",
     "likes": 0,
     "username": "cyango",
@@ -65,11 +68,12 @@
         "comment": "Goodbye",
         "username": "cyango"
       }
-    ]
+    ],
+    "created": 1522201646827
   },
   {
     "title": "Magnifying Glass",
-    "src": "http://localhost:8080/api/uploads/magnifying-glass.jpg",
+    "src": "https://workinprogress-cyang.herokuapp.com/api/uploads/magnifying-glass.jpg",
     "alt": "Picture of a Magnifying Glass",
     "likes": 0,
     "username": "cyango",
@@ -82,11 +86,12 @@
         "comment": "Goodbye",
         "username": "cyango"
       }
-    ]
+    ],
+    "created": 1522201646827
   },
   {
     "title": "Wall-E",
-    "src": "http://localhost:8080/api/uploads/wall-e.jpeg",
+    "src": "https://workinprogress-cyang.herokuapp.com/api/uploads/wall-e.jpeg",
     "alt": "Picture of Wall-E",
     "likes": 0,
     "username": "cyango",
@@ -99,11 +104,12 @@
         "comment": "Goodbye",
         "username": "cyango"
       }
-    ]
+    ],
+    "created": 1522201646827
   },
   {
     "title": "Airplane",
-    "src": "http://localhost:8080/api/uploads/aircraft.jpg",
+    "src": "https://workinprogress-cyang.herokuapp.com/api/uploads/aircraft.jpg",
     "alt": "Picture of an Airplane",
     "likes": 0,
     "username": "cyango",
@@ -116,11 +122,12 @@
         "comment": "Goodbye",
         "username": "cyango"
       }
-    ]
+    ],
+    "created": 1522201646827
   },
   {
     "title": "Milk",
-    "src": "http://localhost:8080/api/uploads/milk.jpg",
+    "src": "https://workinprogress-cyang.herokuapp.com/api/uploads/milk.jpg",
     "alt": "Picture of Milk",
     "likes": 0,
     "username": "cyango",
@@ -133,11 +140,12 @@
         "comment": "Goodbye",
         "username": "cyango"
       }
-    ]
+    ],
+    "created": 1522201646827
   },
   {
     "title": "Locket",
-    "src": "http://localhost:8080/api/uploads/locket.jpg",
+    "src": "https://workinprogress-cyang.herokuapp.com/api/uploads/locket.jpg",
     "alt": "Picture of a Locket",
     "likes": 0,
     "username": "cyango",
@@ -150,11 +158,12 @@
         "comment": "Goodbye",
         "username": "cyango"
       }
-    ]
+    ],
+    "created": 1522201646827
   },
   {
     "title": "Magnifying Glass",
-    "src": "http://localhost:8080/api/uploads/magnifying-glass.jpg",
+    "src": "https://workinprogress-cyang.herokuapp.com/api/uploads/magnifying-glass.jpg",
     "alt": "Picture of a Magnifying Glass",
     "likes": 0,
     "username": "cyango",
@@ -167,6 +176,7 @@
         "comment": "Goodbye",
         "username": "cyango"
       }
-    ]
+    ],
+    "created": 1522201646827
   }
 ]
