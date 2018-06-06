@@ -1,8 +1,44 @@
 # WIP
-
 I love video games and I wanted a website for gamers to share their epic moments. This is where WIP comes in. With WIP, gamers can upload their moments and share them online.
 
-## Live App: https://wip287.netlify.com/
+# Visit the App
+A deployed version of the app: https://wip287.netlify.com/
+
+Feel free to register, but here's a demo account if you don't want to:
+
+username: demo
+
+password: demo1234
+
+# API
+
+#### Create a User
+
+POST https://workinprogress-cyang.herokuapp.com/api/users
+
+#### Login
+
+POST https://workinprogress-cyang.herokuapp.com/api/login
+
+#### Get Pictures
+
+GET https://workinprogress-cyang.herokuapp.com/api/pic
+
+#### Get Single Picture
+
+GET https://workinprogress-cyang.herokuapp.com/api/pic/:id
+
+#### Upload a Picture
+
+POST https://workinprogress-cyang.herokuapp.com/api/pic
+
+#### Update Picture Details
+
+PUT https://workinprogress-cyang.herokuapp.com/api/pic/:id
+
+#### Delete a Picture
+
+DELETE https://workinprogress-cyang.herokuapp.com/api/pic/:id
 
 # Technology Stack
 Frontend
@@ -10,6 +46,7 @@ Frontend
   * CSS
   * React
   * Redux
+
 Backend
   * Node
   * Express

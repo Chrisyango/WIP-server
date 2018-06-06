@@ -3,8 +3,13 @@
 const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
+const passport = require('passport');
 
 const Pic = require('../models/pic');
+
+router.use(passport.authenticate('jwt',
+  {session: false, failWithError: true})
+);
 
 /* ========== GET/READ ALL ITEM ========== */
 router.get('/pic', (req, res, next) => {
@@ -71,8 +76,6 @@ router.put('/pic/:id', (req, res, next) => {
     err.status = 400;
     return next(err);
   }
-
-  console.log(req.body.likes);
 
   const updateItem = { likes, comments };
 

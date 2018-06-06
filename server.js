@@ -57,10 +57,6 @@ app.use(
 app.post('/api/uploads', upload.single('file'), (req, res) => {
   const file = req.file; // file passed from client
   const meta = req.body; // all other values passed from the client, like name, etc..
-
-  console.log(file);
-  // console.log(req);
-  // console.log(res);
   res.json(file);
 });
 
@@ -69,9 +65,6 @@ app.use('/api', authRouter);
 
 passport.use(localStrategy);
 passport.use(jwtStrategy);
-app.use(passport.authenticate('jwt',
-  {session: false, failWithError: true})
-);
 
 app.use('/api', picRouter);
 
